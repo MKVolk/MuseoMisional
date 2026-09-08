@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Museo Misional</string>
-    <string name="main_title">Local Web Server</string>
+    <string name="main_title">Museo Misional</string>
     <string name="main_folder_title">Website folder</string>
     <string name="main_folder_select">Select Website Folder</string>
     <string name="main_QR_show">Show QR Code</string>

@@ -27,6 +27,7 @@ import android.telephony.TelephonyManager
 import android.view.View
 import android.widget.Button
 import androidx.annotation.RequiresPermission
+import androidx.documentfile.provider.DocumentFile
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
@@ -86,6 +87,8 @@ class MainActivity : AppCompatActivity() {
             folderText.text =  "Folder: " + getFolderName( uri ) + "/"
             folderText.backgroundTintList = ColorStateList.valueOf(("#D1FFFB".toColorInt()))
 
+            // Store HTML file in selected folder
+            storePage(uri)
         }
 
     private val notificationPermissionLauncher =
@@ -615,7 +618,7 @@ class MainActivity : AppCompatActivity() {
         displayQrCode()
 
         val container = findViewById<LinearLayout>(R.id.main_container)
-        container.backgroundTintList = ColorStateList.valueOf(("#C8FFF2".toColorInt()))
+        container.backgroundTintList = ColorStateList.valueOf(("#FFE8A6".toColorInt()))
 
         //TODO: Show the URL
     }
@@ -692,5 +695,45 @@ class MainActivity : AppCompatActivity() {
 
 
     }*/
+
+    /** Museo Misional speciffic functions
+     * storePage(Uri)
+     */
+
+    private fun storePage(selectedFolderUri: Uri) {
+        val folder = DocumentFile.fromTreeUri(this, selectedFolderUri)
+            ?: return
+
+        val pages = listOf(
+            "index.html",
+            "en.html",
+            "es.html",
+            "de.html",
+            "fr.html"
+        )
+
+        pages.forEach { fileName ->
+            // Delete existing copy
+            folder.findFile(fileName)?.delete()
+
+            // Create the HTML file.
+            val destination = folder.createFile("text/html", fileName)
+                ?: return@forEach
+
+            // Copy the HTML from assets to the selected folder.
+            assets.open(fileName).use { input ->
+                contentResolver.openOutputStream(destination.uri).use { output ->
+                    if (output != null) {
+                        input.copyTo(output)
+                    }
+                }
+            }
+
+            Toast.makeText(this,
+                "Pages have ben Injected >:3",
+                Toast.LENGTH_SHORT).show()
+        }
+    }
+
 
 }

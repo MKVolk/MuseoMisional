@@ -22,6 +22,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Museumv2"
+rootProject.name = "MuseoMisional"
 include(":app")
  
