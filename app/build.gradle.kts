@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.mkvolk.staticserver"
+    namespace = "com.mkvolk.museomisional"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.mkvolk.staticserver"
+        applicationId = "com.mkvolk.museomisional"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

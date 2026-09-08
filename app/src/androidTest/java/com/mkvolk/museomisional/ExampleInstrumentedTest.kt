@@ -1,4 +1,4 @@
-package com.mkvolk.staticserver
+package com.mkvolk.museomisional
 /*
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

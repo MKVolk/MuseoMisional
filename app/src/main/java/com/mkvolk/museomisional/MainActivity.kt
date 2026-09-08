@@ -1,4 +1,4 @@
-package com.mkvolk.staticserver
+package com.mkvolk.museomisional
 
 import android.Manifest
 import android.app.AlertDialog

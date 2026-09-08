@@ -1,4 +1,4 @@
-package com.mkvolk.staticserver
+package com.mkvolk.museomisional
 
 //import android.R
 import android.app.Notification
@@ -25,11 +25,11 @@ import java.util.concurrent.Executors
 class StaticServerService : Service() {
 
     companion object {
-        const val ACTION_START = "com.mkvolk.staticserver.START"
-        const val ACTION_STOP = "com.mkvolk.staticserver.STOP"
+        const val ACTION_START = "com.mkvolk.museomisional.START"
+        const val ACTION_STOP = "com.mkvolk.museomisional.STOP"
         const val EXTRA_FOLDER_URI = "folder_uri"
         const val PORT = 8080
-        private const val CHANNEL_ID = "local_static_server"
+        private const val CHANNEL_ID = "museo_misional"
         private const val NOTIFICATION_ID = 1001
     }
 
