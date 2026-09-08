@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pocket Server</string>
+    <string name="app_name">Museo Misional</string>
     <string name="main_title">Servidor Web Local</string>
     <string name="main_folder_title">Carpeta del servidor</string>
     <string name="main_folder_select">Seleccionar Carpeta del servidor</string>
@@ -11,5 +11,5 @@
     <string name="main_mobile_data">Los Datos Móbiles están activados</string>
     <string name="main_info_title">Información de la App</string>
     <string name="main_info_close">Cerrar</string>
-    <string name="main_info_text">Aplicación de código abierto :3</string>
+    <string name="main_info_text">Aplicación hecha para el Museo Misional de Concepción</string>
 </resources>

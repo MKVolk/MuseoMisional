@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Pocket Server</string>
+    <string name="app_name">Museo Misional</string>
     <string name="main_title">Local Web Server</string>
     <string name="main_folder_title">Website folder</string>
     <string name="main_folder_select">Select Website Folder</string>
@@ -11,5 +11,5 @@
     <string name="main_mobile_data">Mobile data is ON</string>
     <string name="main_info_title">App info</string>
     <string name="main_info_close">Close</string>
-    <string name="main_info_text">Open source app :3</string>
+    <string name="main_info_text">App made for the local Museo Misional from Concepción</string>
 </resources>

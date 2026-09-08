@@ -545,7 +545,6 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-
         container.addView(
             infoText,
             LinearLayout.LayoutParams(
