@@ -159,7 +159,7 @@ class MainActivity : AppCompatActivity() {
             if (selectedFolderUri == null) {
 
                 Toast.makeText( this,
-                    "Select a website folder first",
+                    "Seleccione la carpeta de la pagina web primero",
                     Toast.LENGTH_SHORT
                 ).show()
 
