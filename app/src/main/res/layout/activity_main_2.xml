@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
 android:layout_height="match_parent"
 xmlns:app="http://schemas.android.com/apk/res-auto">
 
@@ -45,6 +46,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
 
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -53,26 +55,60 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
         <TextView
             android:id="@+id/main_mobile_data"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:text="@string/main_mobile_data"
             android:background="@drawable/rounded_ui"
             android:backgroundTint="#FFCD9B"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp">
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="Suspicious0dp">
         </TextView>
 
         <TextView
             android:id="@+id/main_hotspot"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="0dp"
             android:text="@string/main_hotspot"
             android:background="@drawable/rounded_ui"
             android:backgroundTint="#FFCD9B"
-            android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp">
+            android:layout_marginBottom="0dp"
+            android:layout_marginEnd="8dp"
+            tools:ignore="Suspicious0dp">
         </TextView>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/main_instr_mobile_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_instr_mobile_data"
+            android:background="@drawable/rounded_ui"
+            android:backgroundTint="#FFCD9B"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp">
+        </TextView>
+        <TextView
+            android:id="@+id/main_instr_hotspot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/main_instr_hotspot"
+            android:background="@drawable/rounded_ui"
+            android:backgroundTint="#FFCD9B"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:padding="8dp">
+        </TextView>
+
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/main_container"
@@ -84,6 +120,16 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
         android:background="@drawable/rounded_ui">
 
 
+            <TextView
+                android:id="@+id/main_instr_server"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/main_instr_server"
+                android:background="@drawable/rounded_ui"
+                android:backgroundTint="#00FFCD9B"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp">
+            </TextView>
             <TextView
                 android:id="@+id/folderText"
                 android:layout_width="wrap_content"
@@ -140,7 +186,7 @@ xmlns:app="http://schemas.android.com/apk/res-auto">
             android:layout_height="wrap_content"
             android:text="@string/main_stop"
             android:background="@drawable/rounded_ui"
-            android:backgroundTint="#FFCCCC"
+            android:backgroundTint="#D3D3D3"
             android:padding="16dp"/>
         </LinearLayout>
 

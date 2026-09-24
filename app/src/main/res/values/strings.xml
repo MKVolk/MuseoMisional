@@ -11,5 +11,8 @@
     <string name="main_info_title">App info</string>
     <string name="main_info_close">Close</string>
     <string name="main_info_text">App made for the local Museo Misional from Concepción</string>
+    <string name="main_instr_mobile_data">1. Turn OFF Mobile Data</string>
+    <string name="main_instr_hotspot">2. Turn ON Hotspot</string>
+    <string name="main_instr_server">3. Turn ON Server</string>
 
 </resources>

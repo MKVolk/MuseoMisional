@@ -13,4 +13,7 @@
     <string name="main_info_title">Información de la App</string>
     <string name="main_info_close">Cerrar</string>
     <string name="main_info_text">Aplicación hecha para el Museo Misional de Concepción</string>
+    <string name="main_instr_mobile_data">1. Apagar Datos Móviles</string>
+    <string name="main_instr_hotspot">2. Encender Punto de Acceso</string>
+    <string name="main_instr_server">3. Encender Servidor</string>
 </resources>

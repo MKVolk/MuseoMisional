@@ -28,6 +28,7 @@ import android.view.View
 import android.widget.Button
 import androidx.annotation.RequiresPermission
 import androidx.documentfile.provider.DocumentFile
+import androidx.transition.Visibility
 import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
@@ -610,17 +611,33 @@ class MainActivity : AppCompatActivity() {
 
         val container = findViewById<LinearLayout>(R.id.main_container)
         container.backgroundTintList = ColorStateList.valueOf(("#D3D3D3".toColorInt()))
+
+        //TODO: Hide Stop and show Start
+
+        val stopBttn = findViewById<Button>(R.id.stopButton)
+        val startBttn = findViewById<Button>(R.id.startButton)
+
+        stopBttn.backgroundTintList = ColorStateList.valueOf(("#D3D3D3".toColorInt()))
+        startBttn.backgroundTintList = ColorStateList.valueOf(("#B5FFA7".toColorInt()))
+
     }
 
     private fun changeUIStart(){
         statusText.text = "Status: Running"
         updateUrl()
+        urlText.text = getServerUrl()
         displayQrCode()
 
         val container = findViewById<LinearLayout>(R.id.main_container)
         container.backgroundTintList = ColorStateList.valueOf(("#FFE8A6".toColorInt()))
 
         //TODO: Show the URL
+        //TODO: Hide Start and show Stop
+        val stopBttn = findViewById<Button>(R.id.stopButton)
+        val startBttn = findViewById<Button>(R.id.startButton)
+
+        stopBttn.backgroundTintList = ColorStateList.valueOf(("#FFCCCC".toColorInt()))
+        startBttn.backgroundTintList = ColorStateList.valueOf(("#FFE8A6".toColorInt()))
     }
 
     override fun onDestroy() {
@@ -729,10 +746,10 @@ class MainActivity : AppCompatActivity() {
                 }
             }
 
-            Toast.makeText(this,
-                "Pages have ben Injected >:3",
-                Toast.LENGTH_SHORT).show()
         }
+        Toast.makeText(this,
+            "Pages have been Injected >:3",
+            Toast.LENGTH_SHORT).show()
     }
 
 
